@@ -16,7 +16,6 @@ export function ProductCard({
 
   const handleAddToCart = () => {
     onAddToCart(product);
-    onClose();
   };
 
   return (
