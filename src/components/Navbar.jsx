@@ -15,7 +15,7 @@ export function Navbar({
   userRole = 'client', 
   onRoleChange, 
   cartItemCount = 0, 
-  onCartClick 
+  onCartClick
 }) {
   const handleAdminClick = () => {
     if (userRole !== 'admin') {
@@ -37,7 +37,7 @@ export function Navbar({
             <h1 className="text-2xl font-bold tracking-tight text-amber-50 hidden sm:block">Coffee Time</h1>
           </Link>
           
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-4">
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button variant="ghost" className="text-amber-50 hover:bg-amber-800 hover:text-white relative h-10 px-4">
@@ -76,6 +76,8 @@ export function Navbar({
                     </Link>
                   </DropdownMenuItem>
                 )}
+
+                <DropdownMenuSeparator className="bg-gray-200 my-1" />
                 
                 <DropdownMenuItem 
                   className="cursor-pointer hover:bg-gray-100 p-2 rounded text-sm text-gray-700 outline-none focus:bg-gray-100" 
